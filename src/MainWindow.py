@@ -402,7 +402,7 @@ class LabyrinthWindow (GObject.GObject):
             translation_x = 5
             translation_y = 0
         else:
-            print "Error"
+            print ("Error")
             return
         GObject.timeout_add (20, self.translate_timeout, translation_x, translation_y)
         self.tr_to = True
