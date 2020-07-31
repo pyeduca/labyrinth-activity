@@ -22,7 +22,9 @@ import shutil
 import time
 from gettext import gettext as _
 import xml.dom.minidom as dom
-
+import gi
+gi.require_version('Gtk', '3.0')
+gi.require_version('PangoCairo', '1.0')
 import cairo
 
 from gi.repository import Gtk
@@ -66,7 +68,7 @@ import utils
 EMPTY = -800
 
 DEFAULT_FONTS = ['Sans', 'Serif', 'Monospace']
-IGNORE_FILES = ['.gitignore', 'MANIFEST', '*.pyc', '*~', '*.bak', 'pseudo.po']
+#IGNORE_FILES = ['.gitignore', 'MANIFEST', '*.pyc', '*~', '*.bak', 'pseudo.po']
 USER_FONTS_FILE_PATH = env.get_profile_path('fonts')
 GLOBAL_FONTS_FILE_PATH = '/etc/sugar_fonts'
 
