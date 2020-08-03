@@ -68,7 +68,6 @@ import utils
 EMPTY = -800
 
 DEFAULT_FONTS = ['Sans', 'Serif', 'Monospace']
-#IGNORE_FILES = ['.gitignore', 'MANIFEST', '*.pyc', '*~', '*.bak', 'pseudo.po']
 USER_FONTS_FILE_PATH = env.get_profile_path('fonts')
 GLOBAL_FONTS_FILE_PATH = '/etc/sugar_fonts'
 
